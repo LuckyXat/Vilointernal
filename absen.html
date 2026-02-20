@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vilo Gelato Office Internal</title>
+    <link rel="icon" href="SIA_favicon.6a1aa913.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="absen.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="index.18dbc454.js" defer=""></script>
+</head>
+
+<style>
+        /* Custom styles for the Main Title Section */
+        .category-subtitle {
+            letter-spacing: 0.15em;
+            color: #6c757d;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .main-page-title {
+            font-family: "Playfair Display", serif; /* Mengikuti gaya serif di gambar */
+            font-size: 3.5rem;
+            color: #000;
+            margin-bottom: 0.5rem;
+        }
+        .main-page-description {
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .title-section {
+            padding-top: 140px; /* Memberi ruang di bawah fixed navbar */
+            padding-bottom: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top shadow-none">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="img/Logowhite.svg" alt="Vilo Logo" id="vilo-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Our Story</a></li>
+                    
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaWork" role="button" data-bs-toggle="dropdown">How We Work</a>
+                            <div class="dropdown-menu mega-menu animate__animated animate__fadeIn">
+                                <div class="row g-0">
+                                    <div class="col-md-4 mega-sidebar">
+                                        <div class="nav flex-column nav-pills" role="tablist">
+                                            <button class="nav-link active text-start mb-2" data-bs-toggle="pill" data-bs-target="#hrd-pane">Human Resource Development</button>
+                                            <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#ga-pane">General Affair</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mega-content">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="hrd-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Explore Human Resource Development</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="/stuktur.html">Struktur Organisasi</a></li>
+                                                    <li><a href="/Sanksi.html">Sanksi</a></li>
+                                                    <li><a href="/absenkaryawan.html">Prosedur Absen</a></li>
+                                                    <li><a href="#">Manajemen Kandidat Karyawan</a></li>
+                                                    <li><a href="#">Prosedur Sistem Penggajian</a></li>
+                                                    <li><a href="#">Prosedur Cuti & Izin</a></li>
+                                                    <li><a href="#">Prosedur Pengunduran Diri</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="ga-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Explore General Affair</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Tugas & Tanggung Jawab</a></li>
+                                                    <li><a href="#">Pemeliharaan Aset</a></li>
+                                                    <li><a href="#">Perjalanan Dinas</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaOps" role="button" data-bs-toggle="dropdown">Operation Handbook</a>
+                            <div class="dropdown-menu mega-menu animate__animated animate__fadeIn">
+                                <div class="row g-0">
+                                    <div class="col-md-4 mega-sidebar">
+                                        <div class="nav flex-column nav-pills" role="tablist">
+                                            <button class="nav-link active text-start mb-2" data-bs-toggle="pill" data-bs-target="#marketing-pane">Marketing</button>
+                                            <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#finance-pane">Finance & Accounting</button>
+                                            <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#procurement-pane">Procurement</button>
+                                            <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#production-pane">Produksi Gelato</button>
+                                            <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#store-pane">Store Operation</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mega-content">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="marketing-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Marketing Department</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Marketing Department</a></li>
+                                                    <li><a href="#">SOP Marketing</a></li>
+                                                    <li><a href="#">Prosedur Permintaan Design Kepada Marketing</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="finance-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Finance & Accounting</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Prosedur Finance</a></li>
+                                                    <li><a href="#">Prosedur Accounting</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="procurement-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Procurement</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Produksi Purchasing</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="production-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Produksi Gelato</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Production Dept</a></li>
+                                                    <li><a href="#">Packing Dept</a></li>
+                                                    <li><a href="#">Warehouse Dept</a></li>
+                                                    <li><a href="#">Food & Pastry Dept</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="store-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Store Operation</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Prosedur Dasar</a></li>
+                                                    <li><a href="#">SOP Opening & Cloning Store</a></li>
+                                                    <li><a href="#">SOP Pelayanan</a></li>
+                                                    <li><a href="#">Prosedur Penanganan Komplain</a></li>
+                                                    <li><a href="#">Prosedur New Store Opening</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container animate__animated animate__fadeInUp">
+            <h1 class="display-2 mb-4">Prosedur Absen</h1>
+            <p class="lead mb-5">Panduan dan prosedur pencatatan kehadiran karyawan Vilo Gelato.</p>
+            <a href="#about" class="btn btn-outline-light btn-lg px-5 rounded-pill">Explore Prosedur Absen</a>
+        </div>
+    </header>
+
+        <section class="ketentuan-umum-section">
+            <div class="container">
+                <div class="ketentuan-container">
+                    <div class="ketentuan-card animate__animated animate__fadeIn">
+                        <h2 class="ketentuan-main-title">Ketentuan Umum</h2>
+                        <ol class="ketentuan-main-list">
+                            <li>Karyawan wajib mematuhi jam kerja yang telah ditetapkan sesuai masing-masing divisi dengan waktu istirahat maksimal selama 1 jam.</li>
+                            <li>Kehadiran dicatat melalui sistem Human Resource Information System (HRIS) yang digunakan untuk mengumpulkan, menyimpan, mengelola data serta proses terkait Sumber Daya Manusia (SDM) dalam suatu perusahaan.</li>
+                            <li>Selama jam kerja, karyawan tidak diperbolehkan meninggalkan area kantor tanpa izin dari Atasan Langsung.</li>
+                            <li>Selama jam kerja, karyawan tidak diperbolehkan untuk dikunjungi oleh keluarga atau kerabat agar dapat meningkatkan fokus dan produktivitas kerja serta menjaga keamanan dan ketertiban di lingkungan kantor.</li>
+                        </ol>
+
+                        <div class="ketentuan-highlight">
+                            <h3 class="highlight-title">Hal yang Perlu Diperhatikan :</h3>
+                            <ul class="highlight-list">
+                                <li><span>a.</span> Pastikan untuk selalu mengecek riwayat kehadiran pada sistem HRIS sebelum meninggalkan area kerja.</li>
+                                <li><span>b.</span> Pastikan seluruh pengajuan seperti change shift maupun overtime diajukan maksimal H+1 melalui sistem HRIS agar tidak ada pengajuan yang terlewat dan dapat diakumulasi di saat proses penggajian.</li>
+                                <li><span>c.</span> Komunikasi ke Atasan jika terjadi kejadian di luar kendali seperti bencana alam, kecelakaan lalu lintas, kondisi medis tertentu, kebijakan pemerintah (force majeure), yang menyebabkan keterlambatan, gaji tidak akan dipotong dengan syarat Karyawan wajib mengirimkan bukti foto menggunakan Aplikasi Timestamp dan upload foto melalui aplikasi HRIS (Talenta).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cek-kehadiran-section">
+            <div class="container">
+                <div class="ketentuan-container"> 
+                    <div class="ketentuan-card animate__animated animate__fadeIn">
+                        <h2 class="ketentuan-main-title">Fungsi Fitur Sistem HRIS</h2>
+                        <div class="hris-image-wrapper">
+                            <img src="img/Absen1.png" alt="HRIS Interface 1" class="img-fluid hris-img">
+                        </div>
+
+                        <ol class="ketentuan-main-list">
+                            <li>Wajib absen masuk menggunakan fitur <strong>Clock in</strong> dan dilakukan di lokasi penempatan kerja yang sesuai dengan ketentuan.</li>
+                            <li>Wajib absen keluar menggunakan fitur <strong>Clock out</strong> dan dilakukan di lokasi penempatan kerja yang sesuai dengan ketentuan.</li>
+                            <li>Fitur <strong>Attendance Log</strong> untuk melihat riwayat kehadiran per hari dan per bulan.</li>
+                            <li>Fitur <strong>Calendar</strong> untuk melihat karyawan yang sedang ulang tahun maupun sedang cuti.</li>
+                            <li>Fitur <strong>Time Off</strong> untuk pengajuan cuti, izin, dan sakit.</li>
+                            <li>Fitur <strong>Live Attendance</strong> pada dasarnya sama dengan fitur clock in dan clock out.</li>
+                            <li>Fitur <strong>Overtime (Lembur)</strong> untuk melakukan pengajuan lembur (overtime).
+                                <ul class="sub-list">
+                                    <li>Jika lembur dilakukan setelah shift berakhir, maka pengajuan lembur dapat dicantumkan pada kolom Overtime after shift.</li>
+                                    <li>Jika lembur dilakukan sebelum shift mulai, maka pengajuan lembur dapat dicantumkan pada kolom Overtime before shift.</li>
+                                    <li>Lembur wajib diajukan maksimal H-1 di dalam HRIS dan wajib mendapatkan persetujuan dari Atasan Langsung.</li>
+                                    <li>Lembur wajib berdasarkan perintah dari Atasan Langsung. Apabila tidak ada perintah dari Atasan dan alasan lembur tidak jelas, maka Atasan Langsung dapat menolak pengajuan lembur tersebut.</li>
+                                </ul>
+                            </li>
+                            <li>Fitur <strong>Request</strong> untuk melakukan pengajuan time off, kehadiran, perubahan shift (change shift), lembur, maupun perubahan data karyawan.</li>
+                        </ol>
+
+                        <h2 class="ketentuan-main-title mt-5">Panduan Cek Riwayat Kehadiran</h2>
+                        <div class="hris-image-wrapper">
+                            <img src="img/absen2.png" alt="HRIS Interface 2" class="img-fluid hris-img">
+                        </div>
+                        <ol class="ketentuan-main-list">
+                            <li>Klik attendance log</li>
+                            <li>Apabila pada riwayat kehadiran tersebut terdapat absen yang tidak terisi</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="level-karyawan-section">
+            <div class="container">
+                <div class="ketentuan-container">
+                    <div class="ketentuan-card animate__animated animate__fadeIn">
+                        <h2 class="ketentuan-main-title">Ketentuan Berdasarkan Level Karyawan</h2>
+                        <div class="accordion accordion-flush" id="accordionLevel">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        <i class="bi bi-person-circle me-3"></i> Part-timer, Magang, Freelance
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionLevel">
+                                    <div class="accordion-body">
+                                        <ol class="ketentuan-main-list ps-3">
+                                            <li>Sistem kerja & absensi bersifat fleksibel namun terikat pada Shifting yang ditentukan oleh Atasan Langsung.</li>
+                                            <li>Pastikan saat melakukan absen penampilan sesuai standar perusahaan.</li>
+                                            <li>Jika tidak hadir sebanyak 3 kali dari jadwal maka dianggap MENGUNDURKAN DIRI.</li>
+                                            <li>Perhitungan upah harian berdasarkan absen harian yang tercatat di HRIS.</li>
+                                        </ol>
+                                        <div class="sanksi-box shadow-sm">
+                                            <h4 class="sanksi-title">5. Struktur Sanksi Keterlambatan:</h4>
+                                            <ul class="sanksi-list">
+                                                <li>Terlambat 1-15 menit: Rp 10.000</li>
+                                                <li>Terlambat 16-30 menit: Rp 20.000</li>
+                                                <li>Terlambat >30 menit: Rp 40.000</li>
+                                                <li>Keterlambatan lebih dari 30 menit selama 3 kali dalam periode sebulan mendapatkan sanksi administrasi berupa SP 1.</li>
+                                                <li>Sanksi penampilan tidak sesuai standar maka dikenakan pemotongan upah Rp 5.000.</li>
+                                            </ul>
+                                        </div>
+
+                                                                        <div class="penting-box shadow-sm mt-3">
+                                        <h4 class="penting-title">6. Pentingnya Update Shift pada Sistem HRIS:</h4>
+                                        <ul class="penting-list">
+                                            <li>Menghindari adanya potongan absen karena sistem mendeteksi keterlambatan.</li>
+                                            <li>Menghindari adanya lembur yang tidak diakumulasi.</li>
+                                            <li>Menghindari perhitungan upah harian yang tidak terakumulasi oleh sistem.</li>
+                                        </ul>
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStaff">
+                                        <i class="bi bi-person-circle me-3"></i> Staff Level
+                                    </button>
+                                </h2>
+                                <div id="collapseStaff" class="accordion-collapse collapse" data-bs-parent="#accordionLevel">
+                                    <div class="accordion-body">
+
+
+                                        <div class="penting-box shadow-sm mb-3">
+                                            <h4 class="penting-title">1. Hari dan Jam Kerja yang Berlaku:</h4>
+                                            <ul class="penting-list">
+                                                <li>Project, GA, R&D, IT, Purchasing, Marketing, L&D: Senin-Jumat 09:00-17:00 & Sabtu 09:00-15:00</li>
+                                                <li>FAT, Legal, HRD: Senin-Jumat 09:00-18:00</li>
+                                                <li>PPIC: Senin-Minggu 09:00-17:00 (Libur 1 hari/minggu)</li>
+                                                <li>Operations (Store): Senin-Minggu, shift sesuai kebutuhan</li>
+                                            </ul>
+                                        </div>
+                                            <ol start="2" class="ketentuan-main-list ps-3">
+                                            <li>Bagi karyawan penempatan kantor pusat yang akan mengambil off pada hari sabtu (1 kali dalam periode cut off 23 - 24) wajib memberitahukan User setiap tanggal 24, jika tidak menginformasikan maka akan bisa dianggap Hangus.</li>
+                                            <li>Tidak berlaku sistem jam kerja mundur : jika karyawan terlambat, waktu pulang tidak diundur atau diganti di jam lain. Karyawan tercatat terlambat jika melakukan presensi pada pukul 09.01 dan seterusnya.</li>
+                                            <li>Tidak berlaku perubahan shift : seluruh karyawan wajib bekerja sesuai dengan jadwal operasional yang telah ditentukan.</li>
+                                            <li>Wajib melampirkan foto layar jika absen error dan konfirmasi kepada HRD.</li>
+                                            <li>Lupa absen hanya bisa diperbolehkan 1 kali dalam sebulan. Jika lebih dari 1 (satu) kali maka User akan menolak pengajuan tersebut.</li>
+                                            <li>Izin keterlambatan hanya bisa diperbolehkan atau disetujui oleh User sebanyak 1 (satu) kali dalam sebulan. Jika lebih dari 1 kali maka User akan menolak pengajuan tersebut.</li>
+                                        </ol>
+
+
+                                        <div class="sanksi-box shadow-sm">
+                                            <h4 class="sanksi-title">8. Struktur Sanksi Keterlambatan:</h4>
+                                            <ul class="sanksi-list">
+                                                <li>Terlambat 1-15 menit: Rp 10.000</li>
+                                                <li>Terlambat 16-30 menit: Rp 20.000</li>
+                                                <li>Terlambat >30 menit: Rp 40.000</li>
+                                                <li>Tidak absen masuk/pulang: Rp 40.000</li>
+                                                <li>Keterlambatan lebih dari 30 menit selama 3 kali dalam periode sebulan (cut off absen tanggal 24-23): Surat Peringatan Pertama (SP 1)</li>
+                                            </ul>
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                                                                    <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSupervisor">
+                                                    <i class="bi bi-person-circle me-3"></i> Supervisor Level
+                                                </button>
+                                            </h2>
+                                            <div id="collapseSupervisor" class="accordion-collapse collapse" data-bs-parent="#accordionLevel">
+                                                <div class="accordion-body">
+                                                
+                                                    <div class="penting-box shadow-sm mb-3">
+                                                        <h4 class="penting-title">1. Hari dan Jam Kerja:</h4>
+                                                        <p class="mb-0 small">Hari dan jam kerja yang berlaku adalah <strong>Senin - Jumat 09.00 WIB - 18.00 WIB</strong>.</p>
+                                                    </div>
+
+                                                    <ol start="2" class="ketentuan-main-list ps-3">
+                                                        <li>Tidak berlaku sistem jam kerja mundur: jika karyawan terlambat, waktu pulang tidak diundur atau diganti di jam lain. karyawan tercatat <strong> terlambat jika melakukan presensi pada pukul 09.01  </strong> dan seterusnya.
+                                        </li>
+                                                        <li>Tidak berlaku perubahan shift bagi staff non-shifting.</li>
+                                                        
+                                                        <li class="list-unstyled">
+                                                            <div class="sanksi-box shadow-sm my-3">
+                                                                <h4 class="sanksi-title">4. Struktur Sanksi Keterlambatan:</h4>
+                                                                <ul class="sanksi-list">
+                                                                    <li>Keterlambatan 1 - 15 menit: pemotongan gaji Rp 10.000.</li>
+                                                                    <li>Keterlambatan 16 - 30 menit: pemotongan gaji Rp 20.000.</li>
+                                                                    <li>Keterlambatan lebih dari 30 menit: pemotongan gaji Rp 40.000.</li>
+                                                                    <li>Keterlambatan lebih dari 30 menit sebanyak 3 kali dalam sebulan: Surat Peringatan Pertama (SP 1).</li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+
+                                                    <li>Setiap karyawan level Supervisor <strong>  melakukan persetujuan maupun penolakan </strong> pengajuan lembur, kehadiran, perubahan shift maupun perubahan data karyawan melalui sistem HRIS.</li>
+                                                    <li>Setiap pengajuan lembur, kehadiran maupun perubahan shift <strong> wajib disetujui atau ditolak melalui sistem HRIS maksimal di jam 12.00 WIB pada tanggal 23 setiap bulannya.</strong> Apabila melewati waktu yang telah ditentukan, maka tidak dapat diakumulasi pada saat penggajian dan tidak dapat diproses pada bulan berikutnya.</li>
+                                                    <li>Apabila karyawan <strong>  cuti tahunan kurang dari 14 hari, Supervisor dapat menolak pengajuan </strong> melalui sistem HRIS dan karyawan akan langsung terinfo (real time).</li>
+                                                    <li>Apabila karyawan mengajukan kehadiran (request attendance) karena lupa absen atau tidak ada alasan yang jelas, Supervisor memiliki wewenang untuk menolak pengajuan tersebut.</li>
+
+                                                    <li> Supervisor berhak menolak pengajuan karyawan apabila tidak ada bukti foto atau keterangan yang jelas dan valid.</li>
+                                                    <li> Supervisor dapat menyetujui pengajuan absen karyawan sebanyak 1 (satu) kali dalam periode sebulan. Jika lebih dari 1 kali supervisor berhak menolak pengajuan tersebut.</li>
+                                                    <li> Izin keterlambatan hanya bisa diperbolehkan atau disetujui Supervisor sebanyak 1 (satu) kali dalam periode sebulan. Jika lebih dari dari 1 kali Supervisor berhak menolak pengajuan tersebut.</li>
+                                                    <li> Supervisor dapat melihat riwayat kehadiran karyawan. </li>
+
+                                                <div class="penting-box shadow-sm mb-3">
+                                                    <h4 class="penting-title"> Cara Melihat Riwayat Kehadiran Anggota Tim (via PC):</h4>
+                                                        <p class="mb-0 small"> Supervisor dapat melihat riwayat kehadiran setiap anggota tim melalui sistem HRIS dan hanya dapat dibuka melalui PC (Personal Computer) dengan cara berikut ini : </p>
+                                                        <ul class="sub-list">
+                                                            <li>Klik fitur <strong>Time</strong> pada dashboard HRIS</li>
+                                                            <li>Klik fitur <strong>Attendance</strong>.</li>
+                                                            
+                                                            <li>Pilih nama anggota tim berdasarkan periode tertentu.</li>
+                                                            <div class="text-center my-2">
+                                                                    <img src="/img/Absen3.png" alt="Menu Time Management" class="img-fluid rounded border shadow-sm" style="max-width: 400px;">
+                                                            </div>
+                                                        </ul>
+                                                </div>
+
+                                        
+                                                <div class="penting-box shadow-sm mb-3">
+
+                                                    <h4 class="penting-title">  Cara Membuat Jadwal dan Shift untuk Anggota Tim:</h4>
+
+
+                                                    <p class="mb-0 small"> Supervisor dapat membuat jadwal dan shift untuk setiap anggota tim melalui 3 tahapan (Export, Update Excel, Import). Berikut cara Export Shifting:</p>
+                                                        
+                                                        <div class="step-guide mt-3">
+                                                            <p class="mb-2"><strong>A. Cara Export Eksisting Shifting dari Sistem HRIS:</strong></p>
+                                                            <ul class="sub-list">
+                                                                <li>Pilih menu <strong>Time Management</strong> > <strong>Attendance</strong>.</li>
+                                                                <div class="text-center my-2">
+                                                                    <img src="img/Absen4.png" alt="Menu Time Management" class="img-fluid rounded border shadow-sm" style="max-width: 400px;">
+                                                                </div>
+                                                                <li>Pilih <strong>Filter</strong> > <strong>Branch</strong> (pilih cabang yang menjadi tanggung jawab Anda) > Klik <strong>Filter</strong>. Klik tombol <strong>Export</strong> > Pilih <strong>Export Shift</strong>.</li>
+                                                                <div class="text-center my-2">
+                                                                    <img src="img/Absen5.png" alt="Proses Export Shift" class="img-fluid rounded border shadow-sm" style="max-width: 400px;">
+                                                                </div>
+
+                                                            <li>Pilih periode tanggal shift yang akan di-update (Klik pada tanggal kalender) Contoh: jadwal shift mulai tanggal 15 Agustus sampai 22 Agustus 2023</li>
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen6.png" alt="Pilih Periode Tanggal" class="img-fluid rounded border shadow-sm" style="max-width: 350px;">
+                                                            </div>
+
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen7.png" alt="Tombol Export" class="img-fluid rounded border" style="max-width: 300px;">
+                                                            </div>
+
+                                                            <li>Pilih karyawan <strong> yang shiftnya akan di update,</strong>  kemudian hapus data shift eksisting. Jika ada karyawan yang <strong> shiftnya tidak di update </strong> maka jangan di hapus datanya agar tidak merubah shift eksisting.
+                                    contoh : Jadwal shift Akun Dummy akan di update mulai dari tanggal 15 agustus sampai 22 agustus 2023</li>
+
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen8.png" alt="Tombol Export" class="img-fluid rounded border" style="max-width: 300px;">
+                                                            </div>
+
+                                                            <li>Masukkan data shifting terbaru untuk karyawan yang akan di ganti shiftnya</li>
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen9.png" alt="Tombol Export" class="img-fluid rounded border" style="max-width: 300px;">
+                                                            </div>
+
+                                                            <p class="mb-2"><strong>B. Update Template Excel Shifting:</strong></p>
+                                                            <li>Tampilan template excel shifting yang sudah di download dari sistem HRIS</li>
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen10.png" alt="Tampilan Template Excel Shifting" class="img-fluid rounded border shadow-sm" style="max-width: 350px;">
+                                                            </div>
+                                                            <li>tampilan “data master shifting”</li>
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen11.png" alt="Tampilan Data Master Shifting" class="img-fluid rounded border shadow-sm" style="max-width: 350px;">
+                                                            </div>
+
+
+                                                            <p class="mb-2"><strong>C. Immport Shifting Baru ke Sistem HRIS:</strong></p>
+                                                            <li> Pilih time management → attendance</li>
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen12.png" alt="Tampilan Template Excel Shifting" class="img-fluid rounded border shadow-sm" style="max-width: 350px;">
+                                                            </div>
+
+                                                            <li> Pilih filter → branch → pilih branch yang menjadi tanggung jawab User → klik filter → klik import → employment shift</li>
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen13.png" alt="Tampilan Data Master Shifting" class="img-fluid rounded border shadow-sm" style="max-width: 350px;">
+                                                            </div>
+                                                            
+                                                                <li> pilih file yang akan di import dengan chara klik “ choose file “ , setelah file berhasil terupload klik import dan akan muncul notifikasi seperti dibawah</li>
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen14.png" alt="Notifikasi Import Shifting" class="img-fluid rounded border shadow-sm" style="max-width: 350px;">
+                                                            </div>
+                                                            <li>Cek hasil shift baru yang sudah di upload apakah sudah sesuai, dengan cara export shift (step seperti page 3 dan 4) dan lakukan random cek</li>
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen15.png" alt="Tampilan Data Master Shifting" class="img-fluid rounded border shadow-sm" style="max-width: 350px;">
+                                        
+                                                            </ul>
+                                                        </div>
+
+
+                                                    </li>
+                                                </ol>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                            
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseManager">
+                                                                <i class="bi bi-person-circle me-3"></i> Manager Level
+                                                            </button>
+                                                        </h2>
+                                        
+                                            <div class="penting-box shadow-sm mb-3">
+                                                <h4 class="penting-title">1. Hari dan Jam Kerja:</h4>
+                                                <p class="mb-0 small">Hari dan jam kerja yang berlaku adalah <strong>Senin - Jumat 09.00 WIB - 18.00 WIB</strong>.</p>
+                                            </div>
+
+                                            <ol start="2" class="ketentuan-main-list ps-3">
+                                                <li>Khusus sabtu minggu jika memang dibutuhkan masuk maka harus bersedia dan hadir.</li>
+                                                <li>Tidak berlaku sistem jam kerja mundur : jika karyawan terlambat, waktu pulang tidak diundur atau diganti di jam lain. karyawan tercatat <strong>  terlambat jika melakukan presensi pada pukul 09.01 </strong> dan seterusnya.</li>
+                                                <li>Tidak berlaku perubahan shift : seluruh karyawan wajib bekerja sesuai dengan jadwal operasional yang telah ditentukan.</li>
+
+                                                <li class="list-unstyled">
+                                                    <div class="sanksi-box shadow-sm my-3">
+                                                        <h4 class="sanksi-title">5. Struktur Sanksi Keterlambatan:</h4>
+                                                        <ul class="sanksi-list">
+                                                            <li>Keterlambatan 1 - 15 menit: pemotongan gaji Rp 10.000.</li>
+                                                            <li>Keterlambatan 16 - 30 menit: pemotongan gaji Rp 20.000.</li>
+                                                            <li>Keterlambatan lebih dari 30 menit: pemotongan gaji Rp 40.000.</li>
+                                                            <li>Keterlambatan lebih dari 30 menit sebanyak 3 kali dalam sebulan: Surat Peringatan Pertama (SP 1).</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>Setiap karyawan level Manager <strong> dapat melakukan persetujuan maupun penolakan </strong> pengajuan lembur, kehadiran, perubahan shift maupun perubahan data karyawan melalui sistem HRIS.</li>
+                                                <li>Setiap pengajuan lembur, kehadiran maupun perubahan shift <strong> wajib disetujui atau ditolak melalui sistem HRIS maksimal di jam 09.00 WIB pada tanggal 23 setiap bulannya.</strong> Apabila melewati waktu yang telah ditentukan, maka tidak dapat diakumulasi pada saat penggajian dan tidak dapat diproses pada bulan berikutnya.</li>
+                                                <li>Apabila karyawan <strong>  cuti tahunan kurang dari 14 hari, Manager dapat menolak pengajuan </strong> melalui sistem HRIS dan karyawan akan langsung terinfo (real time).</li>
+                                                <li>Apabila karyawan mengajukan kehadiran (request attendance) karena lupa absen atau tidak ada alasan yang jelas, Manager memiliki wewenang untuk menolak pengajuan tersebut.</li>
+                                                <li> Manager dapat melihat riwayat kehadiran karyawan. </li>
+
+                                            <div class="penting-box shadow-sm mb-3">
+                                                <h4 class="penting-title"> Cara Melihat Riwayat Kehadiran Anggota Tim (via PC):</h4>
+                                                    <p class="mb-0 small"> Manager dapat melihat riwayat kehadiran setiap anggota tim melalui sistem HRIS dan hanya dapat dibuka melalui PC (Personal Computer) dengan cara berikut ini : </p>
+                                                    <ul class="sub-list">
+                                                        <li>Klik fitur <strong>Time</strong> pada dashboard HRIS</li>
+                                                        <li>Klik fitur <strong>Attendance</strong>.</li>
+                                                        
+                                                        <li>Pilih nama anggota tim berdasarkan periode tertentu.</li>
+                                                        <div class="text-center my-2">
+                                                                <img src="img/Absen3.png" alt="Menu Time Management" class="img-fluid rounded border shadow-sm" style="max-width: 400px;">
+                                                        </div>
+                                                    </ul>
+                                            </div>
+
+                                                
+                                            <div class="penting-box shadow-sm mb-3">
+
+                                                <p class="mb-0 small"> Manager dapat menyetujui atau menolak pengajuan anggota tim dengan cara berikut :</p>
+                                                    
+                                                    <div class="step-guide mt-3">
+                                                        <ul class="sub-list">
+                                                            <li>Approval Request Overtime.</li>
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen17.png" alt="Menu Time Management" class="img-fluid rounded border shadow-sm" style="max-width: 400px;">
+                                                            </div>
+                                                            <li> Approval Request Day Off </li>
+
+                                                            <div class="text-center my-2">
+                                                                <img src="img/Absen18.png" alt="Proses Export Shift" class="img-fluid rounded border shadow-sm" style="max-width: 400px;">
+                                                            </div>
+
+                                                            <li> Approval Request Change Shift  </li>
+                                                        <div class="text-center my-2">
+                                                            <img src="img/Absen19.png" alt="Pilih Periode Tanggal" class="img-fluid rounded border shadow-sm" style="max-width: 350px;">
+                                                        </div>
+
+
+                                                </li>
+                                            </ol>
+
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="ketentuan-container">
+                    <div class="ketentuan-card animate__animated animate__fadeIn">
+                        <h2 class="ketentuan-main-title">FAQ (Frequently Asked Questions)</h2>
+                        <div class="accordion accordion-flush" id="accordionFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        Apa yang harus dilakukan jika tidak sengaja Clock out di fitur Clock in?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body text-muted small">
+                                        <ul class="FAQ-list">
+                                            <li>Situasi 1: Jika sudah clock in saat masuk, jam tidak akan otomatis terganti.</li>
+                                            <li>Situasi 2: Jika tidak clock in saat masuk, ajukan request attendance.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                            Kapan pengajuan via Talenta di approve?
+                                        </button>
+                                    </h2>
+                                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body text-muted small">
+                                            <p class="mb-1"><strong>Alur approval 2 tahap:</strong></p>
+                                            <ul class="alur-list">
+                                                <li>Atasan Langsung: maksimal tanggal 24 jam 09:00 WIB</li>
+                                                <li>HRD: maksimal tanggal 24 jam 12:00 WIB</li>
+                                            </ul>
+                                            <p class="text-danger mt-2">Pengajuan lebih dari tanggal tersebut akan ditolak</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                            Mengapa perhitungan lembur berbeda dengan rekap manual?
+                                    </button>
+                                </h2>
+                                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body text-muted small">
+                                            <p class="mb-1"><strong>Beberapa faktor yang mempengaruhi:</strong></p>
+                                            <ul class="alur-list">
+                                                <li>Tidak clock out sehingga sistem tidak dapat mengakumulasi lembur</li>
+                                                <li>Shift belum di-update</li>
+                                                <li>Terlambat clock in sehingga waktu kerja mundur</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer-modern py-5 text-center">
+        <div class="container">
+            <img src="img/Logo.svg" width="100" class="mb-4 filter-white">
+            <div class="social-icons mb-4">
+                <a href="https://api.whatsapp.com/send/?phone=628161639999&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/vilogelato/"><i class="fab fa-instagram"></i></a>
+
+                <a href="https://www.facebook.com/vilogelato"><i class="fab fa-facebook"></i></a>
+                <a href="https://tiktok.com/vilogelato"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/company/vilo-gelato01/"><i class="fab fa-linkedin"></i></a>
+            </div>            
+            <p class="small text-muted mb-0">© 2026 Vilo Gelato. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        // 1. Sinkronisasi Dual Slider (About Section)
+        const $textSlider = $('.article-text-slider');
+        const $imageSlider = $('.article-image-slider');
+
+        $textSlider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.article-image-slider',
+            autoplay: true,
+            autoplaySpeed: 4000
+        });
+
+        $imageSlider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.article-text-slider',
+            dots: true,
+            fade: true,
+            arrows: false,
+            infinite: true
+        });
+
+        // Fix Refresh Bug
+        $(window).on('load', function() {
+            $textSlider.slick('setPosition');
+            $imageSlider.slick('setPosition');
+        });
+
+        // 2. Logic Hover Mega Menu
+        // 2. Logic Click/Toggle Mega Menu
+        $('.nav-item.dropdown').on('click', function(e) {
+            const $this = $(this);
+            const $menu = $this.find('.dropdown-menu');
+            
+            // Cek apakah menu sudah terbuka
+            if ($this.hasClass('show')) {
+                // Jika sudah terbuka, maka tutup
+                $this.removeClass('show');
+                $this.find('.dropdown-toggle').attr('aria-expanded', 'false');
+                $menu.removeClass('show');
+            } else {
+                // Jika belum terbuka, tutup dropdown lain dulu baru buka yang ini
+                $('.nav-item.dropdown').removeClass('show');
+                $('.dropdown-menu').removeClass('show');
+                
+                $this.addClass('show');
+                $this.find('.dropdown-toggle').attr('aria-expanded', 'true');
+                $menu.addClass('show');
+            }
+            
+            // Mencegah menu langsung tertutup jika mengklik area di dalam menu
+            e.stopPropagation();
+        });
+
+// Tutup menu jika mengklik di luar area navbar
+$(document).on('click', function() {
+    $('.nav-item.dropdown').removeClass('show');
+    $('.dropdown-menu').removeClass('show');
+});
+
+        // 3. Navbar Scroll Effect
+        $(window).scroll(function() {
+            const navbar = $('.navbar');
+            const logo = $('#vilo-logo');
+            if ($(this).scrollTop() > 50) {
+                navbar.addClass('nav-scrolled shadow-sm');
+                logo.attr('src', 'img/Logo.svg');
+            } else {
+                navbar.removeClass('nav-scrolled shadow-sm');
+                logo.attr('src', 'img/Logowhite.svg');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

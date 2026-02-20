@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vilo Gelato Office Internal</title>
+    <link rel="icon" href="SIA_favicon.6a1aa913.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="absen.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="index.18dbc454.js" defer=""></script>
+</head>
+
+<style>
+        /* Custom styles for the Main Title Section */
+        .category-subtitle {
+            letter-spacing: 0.15em;
+            color: #6c757d;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .main-page-title {
+            font-family: "Playfair Display", serif; /* Mengikuti gaya serif di gambar */
+            font-size: 3.5rem;
+            color: #000;
+            margin-bottom: 0.5rem;
+        }
+        .main-page-description {
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .title-section {
+            padding-top: 140px; /* Memberi ruang di bawah fixed navbar */
+            padding-bottom: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top shadow-none">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="img/Logowhite.svg" alt="Vilo Logo" id="vilo-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Our Story</a></li>
+                    
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaWork" role="button" data-bs-toggle="dropdown">How We Work</a>
+                            <div class="dropdown-menu mega-menu animate__animated animate__fadeIn">
+                                <div class="row g-0">
+                                    <div class="col-md-4 mega-sidebar">
+                                        <div class="nav flex-column nav-pills" role="tablist">
+                                            <button class="nav-link active text-start mb-2" data-bs-toggle="pill" data-bs-target="#hrd-pane">Human Resource Development</button>
+                                            <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#ga-pane">General Affair</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mega-content">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="hrd-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Explore Human Resource Development</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="/stuktur.html">Struktur Organisasi</a></li>
+                                                    <li><a href="/Sanksi.html">Sanksi</a></li>
+                                                    <li><a href="/absenkaryawan.html">Prosedur Absen</a></li>
+                                                    <li><a href="#">Manajemen Kandidat Karyawan</a></li>
+                                                    <li><a href="#">Prosedur Sistem Penggajian</a></li>
+                                                    <li><a href="#">Prosedur Cuti & Izin</a></li>
+                                                    <li><a href="#">Prosedur Pengunduran Diri</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="ga-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Explore General Affair</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Tugas & Tanggung Jawab</a></li>
+                                                    <li><a href="#">Pemeliharaan Aset</a></li>
+                                                    <li><a href="#">Perjalanan Dinas</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaOps" role="button" data-bs-toggle="dropdown">Operation Handbook</a>
+                            <div class="dropdown-menu mega-menu animate__animated animate__fadeIn">
+                                <div class="row g-0">
+                                    <div class="col-md-4 mega-sidebar">
+                                        <div class="nav flex-column nav-pills" role="tablist">
+                                            <button class="nav-link active text-start mb-2" data-bs-toggle="pill" data-bs-target="#marketing-pane">Marketing</button>
+                                            <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#finance-pane">Finance & Accounting</button>
+                                            <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#procurement-pane">Procurement</button>
+                                            <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#production-pane">Produksi Gelato</button>
+                                            <button class="nav-link text-start mb-2" data-bs-toggle="pill" data-bs-target="#store-pane">Store Operation</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mega-content">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="marketing-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Marketing Department</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Marketing Department</a></li>
+                                                    <li><a href="#">SOP Marketing</a></li>
+                                                    <li><a href="#">Prosedur Permintaan Design Kepada Marketing</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="finance-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Finance & Accounting</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Prosedur Finance</a></li>
+                                                    <li><a href="#">Prosedur Accounting</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="procurement-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Procurement</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Produksi Purchasing</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="production-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Produksi Gelato</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Production Dept</a></li>
+                                                    <li><a href="#">Packing Dept</a></li>
+                                                    <li><a href="#">Warehouse Dept</a></li>
+                                                    <li><a href="#">Food & Pastry Dept</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="store-pane">
+                                                <h6 class="fw-bold text-primary mb-4">Store Operation</h6>
+                                                <ul class="sub-list-grid">
+                                                    <li><a href="#">Prosedur Dasar</a></li>
+                                                    <li><a href="#">SOP Opening & Cloning Store</a></li>
+                                                    <li><a href="#">SOP Pelayanan</a></li>
+                                                    <li><a href="#">Prosedur Penanganan Komplain</a></li>
+                                                    <li><a href="#">Prosedur New Store Opening</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container animate__animated animate__fadeInUp">
+            <h1 class="display-2 mb-4">Prosedur Sistem Penggajian</h1>
+            <p class="lead mb-5">Ketentuan dan prosedur penggajian karyawan Vilo Gelato.</p>
+            <a href="#about" class="btn btn-outline-light btn-lg px-5 rounded-pill">Explore Prosedur Sistem Penggajian</a>
+        </div>
+    </header>
+
+        <section class="ketentuan-umum-section">
+            <div class="container">
+                <div class="ketentuan-container">
+                    <div class="ketentuan-card animate__animated animate__fadeIn">
+                        <h2 class="ketentuan-main-title">Prosedur Sistem Penggajian</h2>
+                        <ol class="ketentuan-main-list">
+                            <li>Karyawan wajib mematuhi jam kerja yang telah ditetapkan sesuai masing-masing divisi dengan waktu istirahat maksimal selama 1 jam.</li>
+                            <li>Kehadiran dicatat melalui sistem Human Resource Information System (HRIS) yang digunakan untuk mengumpulkan, menyimpan, mengelola data serta proses terkait Sumber Daya Manusia (SDM) dalam suatu perusahaan.</li>
+                            <li>Selama jam kerja, karyawan tidak diperbolehkan meninggalkan area kantor tanpa izin dari Atasan Langsung.</li>
+                            <li>Selama jam kerja, karyawan tidak diperbolehkan untuk dikunjungi oleh keluarga atau kerabat agar dapat meningkatkan fokus dan produktivitas kerja serta menjaga keamanan dan ketertiban di lingkungan kantor.</li>
+                        </ol>
+
+                        <div class="ketentuan-highlight">
+                            <h3 class="highlight-title">Hal yang Perlu Diperhatikan :</h3>
+                            <ul class="highlight-list">
+                                <li><span>a.</span> Pastikan untuk selalu mengecek riwayat kehadiran pada sistem HRIS sebelum meninggalkan area kerja.</li>
+                                <li><span>b.</span> Pastikan seluruh pengajuan seperti change shift maupun overtime diajukan maksimal H+1 melalui sistem HRIS agar tidak ada pengajuan yang terlewat dan dapat diakumulasi di saat proses penggajian.</li>
+                                <li><span>c.</span> Komunikasi ke Atasan jika terjadi kejadian di luar kendali seperti bencana alam, kecelakaan lalu lintas, kondisi medis tertentu, kebijakan pemerintah (force majeure), yang menyebabkan keterlambatan, gaji tidak akan dipotong dengan syarat Karyawan wajib mengirimkan bukti foto menggunakan Aplikasi Timestamp dan upload foto melalui aplikasi HRIS (Talenta).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section id="prosedur-penggajian" class="py-5">
+    <div class="container">
+        <div class="ketentuan-container">
+            <div class="ketentuan-card animate__animated animate__fadeIn">
+                <h2 class="ketentuan-main-title mb-4">Ketentuan Umum Penggajian</h2>
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="ketentuan-main-list">
+                            <li><strong>Cut-off payroll</strong> adalah batasan tanggal awal dan akhir suatu periode pembukuan penggajian. Cut-off payroll di perusahaan adalah <strong>tanggal 23 setiap bulannya</strong>.</li>
+                            <li>Perhitungan 1 periode penggajian adalah <strong>tanggal 24 - 23 setiap bulannya</strong>.</li>
+                            <li>HRD wajib memberikan laporan hasil rekapen absensi final kepada HRD Manager/COO maksimal <strong>tanggal 28, Pukul 12:00</strong>.</li>
+                            <li>Proses laporan pemeriksaan akhir akan diproses oleh HRD Manager/COO selama <strong>maksimal 2 hari</strong>.</li>
+                            <li>Gaji akan diproses <strong>setiap akhir bulan</strong> sesuai dengan kalender bulan berjalan yaitu tanggal 30 atau 31.</li>
+                            <li>Perhitungan gaji karyawan <em>part-timer</em> berdasarkan riwayat kehadiran yang tercatat pada <strong>sistem HRIS</strong>.</li>
+                            <li>Setiap lembur (<em>overtime</em>) dapat diajukan maksimal H+1. Apabila pengajuan melebihi tanggal 23 maka lembur tidak dapat diakumulasi.</li>
+                            
+                        </ol>
+                    </div>
+                </div>
+
+
+                                                                <div class="penting-box shadow-sm mb-3">
+                                                    <h4 class="penting-title">8. Contoh simulasi perhitungan gaji prorata bagi karyawan full-timer :</h4>
+                                                        <p class="mb-0 small"> Supervisor dapat melihat riwayat kehadiran setiap anggota tim melalui sistem HRIS dan hanya dapat dibuka melalui PC (Personal Computer) dengan cara berikut ini : </p>
+                                                        <ul class="sub-list">
+                                                            <li>Karyawan A awal masuk bekerja pada tanggal 1 Oktober 2026 pada dashboard HRIS</li>
+                                                            <li>Gaji perbulan Rp. 2.000.000</li>
+                                                            <li>Hari kerja Senin - Sabtu</li>
+                                                            <li>Dalam periode 1 Oktober - 23 Oktober 2026 total ada 20 hari kerja    
+                                                            <li>Dalam periode 24 September - 23 Oktober 2026 (seusai cut off payroll) total ada 26 hari kerja</li>
+                                                            <li>Maka, perhitungan gaji prorata yang akan diterima pada tanggal 31 Oktober 2026 adalah :</li>
+                                                            <li>Pilih nama anggota tim berdasarkan periode tertentu.</li>
+
+                                                            <li>(Jumlah Hari Kerja Aktual / Total Hari Kerja Dalam Sebulan) x Gaji Bulanan 20 / 26 x Rp.2.000.000 = Rp. 1.538.461</li>
+
+                                                        </ul>
+                                                </div>
+
+                <div class="penting-box shadow-sm mt-5">
+                    <h4 class="penting-title"><i class="bi bi-envelope-at me-2"></i>Informasi Slip Gaji</h4>
+                    <ol start="9" class="ketentuan-main-list ps-3">
+                        <li>Slip gaji akan dikirimkan melalui <strong>email</strong> masing-masing karyawan maksimal pada <strong>tanggal 5 (lima)</strong> setiap bulannya.</li>
+                        <li>Cara melihat slip gaji pada email yaitu dengan memasukkan <strong>password</strong> tanggal lahir karyawan dengan format: <code>yyyy/mm/dd</code></li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="footer-modern py-5 text-center">
+        <div class="container">
+            <img src="img/Logo.svg" width="100" class="mb-4 filter-white">
+            <div class="social-icons mb-4">
+                <a href="https://api.whatsapp.com/send/?phone=628161639999&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/vilogelato/"><i class="fab fa-instagram"></i></a>
+
+                <a href="https://www.facebook.com/vilogelato"><i class="fab fa-facebook"></i></a>
+                <a href="https://tiktok.com/vilogelato"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/company/vilo-gelato01/"><i class="fab fa-linkedin"></i></a>
+            </div>            
+            <p class="small text-muted mb-0">© 2026 Vilo Gelato. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        // 1. Sinkronisasi Dual Slider (About Section)
+        const $textSlider = $('.article-text-slider');
+        const $imageSlider = $('.article-image-slider');
+
+        $textSlider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.article-image-slider',
+            autoplay: true,
+            autoplaySpeed: 4000
+        });
+
+        $imageSlider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.article-text-slider',
+            dots: true,
+            fade: true,
+            arrows: false,
+            infinite: true
+        });
+
+        // Fix Refresh Bug
+        $(window).on('load', function() {
+            $textSlider.slick('setPosition');
+            $imageSlider.slick('setPosition');
+        });
+
+        // 2. Logic Hover Mega Menu
+        // 2. Logic Click/Toggle Mega Menu
+        $('.nav-item.dropdown').on('click', function(e) {
+            const $this = $(this);
+            const $menu = $this.find('.dropdown-menu');
+            
+            // Cek apakah menu sudah terbuka
+            if ($this.hasClass('show')) {
+                // Jika sudah terbuka, maka tutup
+                $this.removeClass('show');
+                $this.find('.dropdown-toggle').attr('aria-expanded', 'false');
+                $menu.removeClass('show');
+            } else {
+                // Jika belum terbuka, tutup dropdown lain dulu baru buka yang ini
+                $('.nav-item.dropdown').removeClass('show');
+                $('.dropdown-menu').removeClass('show');
+                
+                $this.addClass('show');
+                $this.find('.dropdown-toggle').attr('aria-expanded', 'true');
+                $menu.addClass('show');
+            }
+            
+            // Mencegah menu langsung tertutup jika mengklik area di dalam menu
+            e.stopPropagation();
+        });
+
+// Tutup menu jika mengklik di luar area navbar
+$(document).on('click', function() {
+    $('.nav-item.dropdown').removeClass('show');
+    $('.dropdown-menu').removeClass('show');
+});
+
+        // 3. Navbar Scroll Effect
+        $(window).scroll(function() {
+            const navbar = $('.navbar');
+            const logo = $('#vilo-logo');
+            if ($(this).scrollTop() > 50) {
+                navbar.addClass('nav-scrolled shadow-sm');
+                logo.attr('src', 'img/Logo.svg');
+            } else {
+                navbar.removeClass('nav-scrolled shadow-sm');
+                logo.attr('src', 'img/Logowhite.svg');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
